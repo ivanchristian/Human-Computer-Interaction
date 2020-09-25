@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beaudei</title>
+    <script src="../js/register.js"></script>
+    <link rel="stylesheet" href="../css/register.css">
+</head>
+<body>
+    <header style="background-color:white">
+        <div class="Header">
+            <div class="Logo"></div>
+            <div class="Slogan">
+                <h1>
+                    <span>R</span>
+                    <span>E</span>
+                    <span>G</span>
+                    <span>I</span>
+                    <span>S</span>
+                    <span>T</span>
+                    <span>E</span>
+                    <span>R</span>
+                    <span>&nbsp;</span>
+                    <span>Y</span>
+                    <span>O</span>
+                    <span>U</span>
+                    <span>R</span>
+                    <span>&nbsp;</span>
+                    <span>A</span>
+                    <span>C</span>
+                    <span>C</span>
+                    <span>O</span>
+                    <span>U</span>
+                    <span>N</span>
+                    <span>T</span>
+                    <span>&nbsp;</span>
+                    <span>T</span>
+                    <span>O</span>
+                    <span>&nbsp;</span>
+                    <span>B</span>
+                    <span>E</span>
+                    <span>A</span>
+                    <span>U</span>
+                    <span>D</span>
+                    <span>E</span>
+                    <span>I</span>
+                </h1>
+            </div>
+         </div>
+         <div class="line"></div>
+
+    <nav id="sideNav">
+        <ul>
+            <li><a href="../html/home.html">HOME</a></li>
+            <li><a href="../html/promotion.html">PROMOTION</a></li>
+            <li><a href="../html/register.html">REGISTER</a></li>
+            <li><a href="../html/makeup.html">SHOP MAKEUP</a></li>
+            <li><a href="../html/skincare.html">SHOP SKIN CARE</a></li>
+        </ul>
+    </nav>
+    <img src="../images/menuhitam.png" id="menuBtn">
+
+    <script>
+        var menuBtn = document.getElementById("menuBtn");
+        var sideNav = document.getElementById("sideNav");
+        sideNav.style.right = "-250px";
+        menuBtn.onclick = function(){
+            if(sideNav.style.right == "-250px"){
+                sideNav.style.right = "0";
+            }
+            else{
+                sideNav.style.right = "-250px";
+            }
+        }
+    </script>
+    </header>
+
+    <div class="reg">
+    <div class="registration">
+        <h2>Sign Up Here</h2>
+        <form name="register" onsubmit="return validate()"> 
+            <input type="text" name="Name" placeholder="Username" >
+            <br><br>
+            <input type="email" name="Email" placeholder="Email" >
+            <br><br>
+            <input type="password" name="Password" placeholder="Password" >
+            <br><br>
+            <input type="address" name="Address" placeholder="Address" >
+            <br><br>
+            <div class="box">
+                <select name="choice">
+                    <option value="skintype"> Skin Type</option>
+                    <option value="Normal"> Normal</option>
+                    <option value="Dry"> Dry</option>
+                    <option value="Combination"> Combination</option>
+                    <option value="Oily"> Oily</option>
+                </select>
+            </div>
+            <br>
+            <input type="radio" name="gender" id="gender" ><a> Male</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="radio" name="gender" id="gender" ><a> Female</a>
+            <br><br>
+            <input id="check" type="checkbox" name="checkbox"><a> I Agree With Terms And Conditions</a>
+            <input type="submit" value ="Submit">
+        </form>
+    </div>
+    </div>
+
+    <footer style="background-color: black;">
+        <div class="footer">
+            <div class="copyright">
+                © Beaudei 2020
+            </div>
+            <a href="https://www.facebook.com/">
+                <div class="facebook"> 
+                    <img src="../images/facebookpink.png" alt="">
+                </div>
+            </a>
+            <a href="https://www.instagram.com/">
+                <div class="instagram"> 
+                    <img src="../images/instagrampink.png" alt="">
+                </div>
+            </a><a href="https://www.linkedin.com/">
+                <div class="linkedin"> 
+                    <img src="../images/linkedinpink.png" alt="">
+                </div>
+            </a><a href="https://twitter.com/">
+                <div class="twitter"> 
+                    <img src="../images/twitterpink.png" alt="">
+                </div>
+            </a>
+        </div>
+      
+    </footer>
+
+</body>
+</html>

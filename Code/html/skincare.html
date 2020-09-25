@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beaudei</title>
+    <link rel="stylesheet" href="../css/skincare.css">
+</head>
+<body>
+    <header style="background-color:white">
+        <div class="Header">
+            <div class="Logo"></div>
+            <div class="Slogan">
+                <h1>
+                    <span>S</span>
+                    <span>H</span>
+                    <span>O</span>
+                    <span>P</span>
+                    <span>&nbsp;</span>
+                    <span>O</span>
+                    <span>U</span>
+                    <span>R</span>
+                    <span>&nbsp;</span>
+                    <span>B</span>
+                    <span>E</span>
+                    <span>S</span>
+                    <span>T</span>
+                    <span>&nbsp;</span>
+                    <span>S</span>
+                    <span>K</span>
+                    <span>I</span>
+                    <span>N</span>
+                    <span>C</span>
+                    <span>A</span>
+                    <span>R</span>
+                    <span>E</span>
+                    <span>&nbsp;</span>
+                    <span>P</span>
+                    <span>R</span>
+                    <span>O</span>
+                    <span>D</span>
+                    <span>U</span>
+                    <span>C</span>
+                    <span>T</span>
+                    <span>&nbsp;</span>
+                    <span>H</span>
+                    <span>E</span>
+                    <span>R</span>
+                    <span>E</span>
+                </h1>
+            </div>
+         </div>
+         <div class="line"></div>
+
+    <nav id="sideNav">
+        <ul>
+            <li><a href="../html/home.html">HOME</a></li>
+            <li><a href="../html/promotion.html">PROMOTION</a></li>
+            <li><a href="../html/register.html">REGISTER</a></li>
+            <li><a href="../html/makeup.html">SHOP MAKEUP</a></li>
+            <li><a href="../html/skincare.html">SHOP SKIN CARE</a></li>
+        </ul>
+    </nav>
+    <img src="../images/menuhitam.png" id="menuBtn">
+
+    <script>
+        var menuBtn = document.getElementById("menuBtn");
+        var sideNav = document.getElementById("sideNav");
+        sideNav.style.right = "-250px";
+        menuBtn.onclick = function(){
+            if(sideNav.style.right == "-250px"){
+                sideNav.style.right = "0";
+            }
+            else{
+                sideNav.style.right = "-250px";
+            }
+        }
+    </script>
+    </header>
+
+    <div class="makeup">
+        <div class="list">
+            <div class="item1"> 
+                <div class="type">Moisturizer</div>
+                <div class="image">
+                    <div class="gambar">
+                        <img src="../images/beaudei flavon booster.png" alt="" height="520px" width="300px">
+                    </div>
+                    <div class="gambar">
+                        <img src="../images/beaudei floral hydro cream.jpg" alt="" height="520px" width="300px">
+                    </div>
+                    <div class="gambar">
+                        <img src="../images/beaudei skinotic water essence.jpg" alt="" height="520px" width="300px">
+                    </div>
+                    <div class="gambar">
+                        <img src="../images/beaudei waso giga rich cream.jpg" alt="" height="520px" width="300px">
+                    </div>
+                </div>
+            </div>
+            <div class="item1">  
+                <div class="type">Cleanser</div>
+                <div class="image">
+                    <div class="gambar">
+                        <img src="../images/beaudei bio bounce collagen cleanser.jpg" alt="" height="520px" width="300px">
+                    </div>
+                    <div class="gambar">
+                        <img src="../images/beaudei bio gold radiance cleanser.jpg" alt="" height="520px" width="300px">
+                    </div>
+                    <div class="gambar">
+                        <img src="../images/beaudei salicylic gentle cleanser.jpg" alt="" height="520px" width="300px">
+                    </div>
+                    <div class="gambar">
+                        <img src="../images/beaudei white dew milky cleanser.jpg" alt="" height="520px" width="300px">
+                    </div>
+                </div>
+            </div>
+            <div class="item1"> 
+                <div class="type">Mask</div>
+                <div class="image">
+                    <div class="gambar"> 
+                        <img src="../images/beaudei gold modelling mask.jpg" alt="" height="520px" width="300px">
+                    </div>
+                    <div class="gambar">
+                        <img src="../images/beaudei grape seed face mask.jpg" alt="" height="520px" width="300px">
+                    </div>
+                    <div class="gambar">
+                        <img src="../images/beaudei overnight vitalizing mask.jpg" alt="" height="520px" width="300px">
+                    </div>
+                    <div class="gambar">
+                        <img src="../images/beaudei aqua soothing mask.jpg" alt="" height="520px" width="300px">
+                    </div>
+                </div>
+            </div>
+            <div class="item1"> 
+                <div class="type">Sun Care</div>
+                <div class="image">
+                    <div class="gambar">
+                        <img src="../images/beaudei 5a control sun lotion.jpg" alt="" height="520px" width="300px">
+                    </div>
+                    <div class="gambar">
+                        <img src="../images/beaudei everyday aqua sun cream.jpg" alt="" height="520px" width="300px">
+                    </div>
+                    <div class="gambar">
+                        <img src="../images/beaudei sun protection spf 30.jpg" alt="" height="520px" width="300px">
+                    </div>
+                    <div class="gambar">
+                        <img src="../images/beaudei daily protection for acne skin.jpg" alt="" height="520px" width="300px">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  
+
+    <footer style="background-color: black;">
+        <div class="footer">
+            <div class="copyright">
+                <a>© Beaudei 2020</a>
+            </div>
+            <a href="https://www.facebook.com/">
+                <div class="facebook"> 
+                    <img src="../images/facebookpink.png" alt="">
+                </div>
+            </a>
+            <a href="https://www.instagram.com/">
+                <div class="instagram"> 
+                    <img src="../images/instagrampink.png" alt="">
+                </div>
+            </a><a href="https://www.linkedin.com/">
+                <div class="linkedin"> 
+                    <img src="../images/linkedinpink.png" alt="">
+                </div>
+            </a><a href="https://twitter.com/">
+                <div class="twitter"> 
+                    <img src="../images/twitterpink.png" alt="">
+                </div>
+            </a>
+        </div>
+      
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beaudei</title>
+    <link rel="stylesheet" href="../js/jquery-3.5.1.min.js">
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+</head>
+<body>
+    <header style="background-color:white">
+        <div class="Header">
+            <div class="Logo"></div>
+            <div class="Slogan">
+                <h1>
+                    <span>Y</span>
+                    <span>O</span>
+                    <span>U</span>
+                    <span>R</span>
+                    <span>&nbsp;</span>
+                    <span>F</span>
+                    <span>A</span>
+                    <span>V</span>
+                    <span>O</span>
+                    <span>R</span>
+                    <span>I</span>
+                    <span>T</span>
+                    <span>E</span>
+                    <span>&nbsp;</span>
+                    <span>S</span>
+                    <span>K</span>
+                    <span>I</span>
+                    <span>N</span>
+                    <span>C</span>
+                    <span>A</span>
+                    <span>R</span>
+                    <span>E</span>
+                    <span>&nbsp;</span>
+                    <span>&</span>
+                    <span>&nbsp;</span>
+                    <span>C</span>
+                    <span>O</span>
+                    <span>S</span>
+                    <span>M</span>
+                    <span>E</span>
+                    <span>T</span>
+                    <span>I</span>
+                    <span>C</span>
+                    <span>S</span>
+                </h1>
+            </div>
+            <div class="search-box">
+                <input type="text" name="" class="search-txt" placeholder="Search"/>
+                    <a class="search-btn" href="../html/makeup.html">
+                        <i class="fas fa-search"></i>
+                    </a>
+            </div>
+         </div>
+
+    <nav id="sideNav">
+        <ul>
+            <li><a href="../html/home.html">HOME</a></li>
+            <li><a href="../html/promotion.html">PROMOTION</a></li>
+            <li><a href="../html/register.html">REGISTER</a></li>
+            <li><a href="../html/makeup.html">SHOP MAKEUP</a></li>
+            <li><a href="../html/skincare.html">SHOP SKIN CARE</a></li>
+        </ul>
+    </nav>
+    <img src="../images/menuhitam.png" id="menuBtn">
+
+    <script>
+        var menuBtn = document.getElementById("menuBtn");
+        var sideNav = document.getElementById("sideNav");
+        sideNav.style.right = "-250px";
+        menuBtn.onclick = function(){
+            if(sideNav.style.right == "-250px"){
+                sideNav.style.right = "0";
+            }
+            else{
+                sideNav.style.right = "-250px";
+            }
+        }
+    </script>
+    </header>
+
+    <div class="carousel-container">
+        <i class="fas fa-chevron-left" id="prevBtn"></i>
+        <i class="fas fa-chevron-right" id="nextBtn"></i>
+        <div class="carousel-slide">
+            <img src="../images/images1.jpg" id="lastClone" alt="">
+            <img src="../images/images3.jpg" alt="">
+            <img src="../images/images2.jpg" alt="">
+            <img src="../images/images1.jpg" alt="">
+            <img src="../images/images3.jpg" id="firstClone" alt="">
+        </div>
+    </div>
+
+    <div class="item">
+        <div class="best">
+            <div class="judul"><a>BEST SELLER</a></div>
+            <div class="atas">
+                <div class="item1">
+                    <div class="gambar">
+                        <img src="../images/best.jpg" alt="" width="916px" height="500px">
+                    </div>
+                    <div class="text">
+                        <a>Beaudei Luminous Loose Powder</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="recommended">
+            <div class="judul"><a>RECOMMENDED</a></div>
+            <div class="atas">
+                <div class="item1">
+                    <div class="gambar">
+                        <img src="../images/recommended.jpg" alt="" width="916px" height="500px">
+                    </div>
+                    <div class="text">
+                        <a>Beaudei Moisture Plus</a>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
+    </div>
+    
+
+    <footer style="background-color: black;">
+        <div class="footer">
+            <div class="copyright">
+                <a>© Beaudei 2020</a>
+            </div>
+            <a href="https://www.facebook.com/">
+                <div class="facebook"> 
+                    <img src="../images/facebookpink.png" alt="">
+                </div>
+            </a>
+            <a href="https://www.instagram.com/">
+                <div class="instagram"> 
+                    <img src="../images/instagrampink.png" alt="">
+                </div>
+            </a><a href="https://www.linkedin.com/">
+                <div class="linkedin"> 
+                    <img src="../images/linkedinpink.png" alt="">
+                </div>
+            </a><a href="https://twitter.com/">
+                <div class="twitter"> 
+                    <img src="../images/twitterpink.png" alt="">
+                </div>
+            </a>
+        </div>
+      
+    </footer>
+
+    <script src="../js/home.js"></script>
+</body>
+</html>
